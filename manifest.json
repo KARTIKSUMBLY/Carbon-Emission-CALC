@@ -1,0 +1,19 @@
+{
+    "manifest_version": 3,
+    "name": "EcoBytes",
+    "version": "1.0",
+    "description": "Track your data usage and its environmental impact in terms of CO₂ emissions.",
+    "permissions": ["storage", "activeTab"],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": "icons/icon48.png"
+    },
+    "content_security_policy": {
+      "extension_pages": "script-src 'self'; object-src 'self'"
+    },
+    "host_permissions": ["<all_urls>"]
+  }
+  

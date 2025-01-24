@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EcoBytes</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <h1>EcoBytes</h1>
+  <button id="start">Start Analysis</button>
+  <button id="stop" disabled>Stop Analysis</button>
+  <button id="reset">Reset Data</button>
+
+  <div id="results">
+    <p>Data Used: <span id="data-usage">0 MB</span></p>
+    <p>Electricity Consumed: <span id="electricity">0 kWh</span></p>
+    <p>GHG Emissions: <span id="ghg">0 mg CO₂</span></p>
+  </div>
+
+  <div class="equivalence">
+    <h3>Equivalence of GHG Emissions:</h3>
+    <p id="cigarettes-equivalent">Equivalent to smoking 0 cigarettes</p>
+    <p id="car-equivalent">Equivalent to running a car for 0 minutes</p>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
